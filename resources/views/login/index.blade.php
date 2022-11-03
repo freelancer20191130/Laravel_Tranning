@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/common/sweetalert2.min.css">
     {{-- Link file Common --}}
     <link rel="stylesheet" href="css/common/common.css" type="text/css">
-    <link rel="stylesheet" href="./css/form/login.css" type="text/css">
+    <link rel="stylesheet" href="./css/screens/login.css" type="text/css">
     <title>Login</title>
     <meta name="csrf-token" content="{{csrf_token()}}" />
 </head>
@@ -48,10 +48,6 @@
     <img class="logo" src="/images/system/logo.png">
 </body>
 </html>
-{{-- text error --}}
-<script>
-        var _text ={!! json_encode($_text) !!}
-</script>
 <script src="js/common/jquery.min.js" charset=" utf-8 "></script>
 <script src="js/common/bootstrap.min.js " type="text/javascript " charset=" utf-8 "></script> 
 <script  src="js/common/sweetalert2.all.min.js"></script>

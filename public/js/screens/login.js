@@ -46,7 +46,7 @@ function initEvents() {
     //Login
     $(document).on('click', '#btn_login', function (e) {
       try {
-        postLogin();
+          postLogin();
       } catch (e) {
         alert('login: ' + e.message);
       }
@@ -65,40 +65,7 @@ function initEvents() {
  */
 function postLogin() {
   try {
-    clearErrors();
-    let data = {};
-    data.contract_cd = $("#contract_cd").val();
-    data.user_id     = $("#user_id").val();
-    data.password    = $("#password").val();
-    data.remember_contract_cd = $('#remember_contract_cd:checked').val();
-    data.remember_id = $('#remember_id:checked').val();
-    $.ajax({
-      url: '/postLogin',
-      type: 'post',
-      dataType: 'json',
-      data: data,
-      success: function (res) {
-        switch (res['status']) {
-          // success
-          case OK:
-            window.location = '/menu';
-            break;
-          // error
-          case NG:
-            if (res['errors'] !== undefined && res['errors'] !== null) {
-                setErrors(res['errors']);
-            } 
-            break;
-          // Exception
-          case EX:
-            // jError(res['Exception']);
-            alert('Exception');
-            break;
-          default:
-            break;
-          }
-      }
-    });
+    
   } catch (error) {
     
   }
