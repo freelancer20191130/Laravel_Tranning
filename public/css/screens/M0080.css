@@ -1,0 +1,187 @@
+#leftcontent>.inner,
+#rightcontent>.inner {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3.5px;
+    min-height: 73vh;
+}
+
+#leftcontent .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltip_error {
+    font-size: 14px;
+    position: absolute;
+}
+
+#item_kind~.tooltip_error {
+    bottom: -15px;
+}
+
+#table-left .tooltip_error {
+    position: unset !important;
+}   
+
+/* CSS input search in left */
+
+.input-group-append-btn button {
+    background-color: #fff !important;
+    border-color: #ced4da !important;
+    color: #ced4da !important;
+}
+
+/* End CSS input search in left */
+
+/* CSS buttons paging in left */
+
+#datatable_flextime_paginate {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#datatable_flextime_paginate a {
+    text-decoration: none;
+    margin: 0 2px;
+    line-height: 20px;
+}
+
+.dataTables_paginate .paginate_button.active {
+    background-color: #707070 !important;
+}
+
+/* End CSS buttons paging in left */
+
+/* CSS list data refer in left */
+
+#list-search {
+    width: inherit;
+    background-color: #ccc !important;
+}
+
+#list-search .list-search-head {
+    height: 31px;
+    background-color: #707070;
+    color: #fff;
+}
+
+.list-search-content {
+    border: 1px solid #ccc;
+}
+
+.list-search-content .list-item {
+    height: 45px;
+    color: #000;
+    border-left: 3px solid #fff;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.list-search-content .list-item:hover {
+    border-color: rgba(0, 0, 0, 0.215);
+    background-color: #EAEFF5;
+    cursor: pointer;
+}
+
+.list-item-active {
+    border-color: rgba(0, 0, 0, 0.215) !important;
+    background-color: #EAEFF5 !important;
+}
+
+/* CSS list data refer in left */
+
+/* CSS table-left */
+
+#table-left {
+    overflow-y: auto;
+    max-height: 250px !important;
+    display: none;
+}
+
+#table-left table thead {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#table-left table thead th {
+    background-color: #EAEBEE;
+    padding: 2px !important;
+}
+
+#table-left table thead th:first-child {
+    width: 80px;
+}
+
+#table-left table thead th:last-child {
+    width: 10px;
+    border-right-color: #dee2e6 !important;
+}
+
+#table-left table thead th button {
+    background-color: unset;
+}
+
+#table-left table thead th button:hover {
+    background-color: #b5dffb;
+}
+
+#table-left table thead th button i{
+    color: #3598DB !important;
+}
+
+#table-left table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+#table-left table tbody tr:hover {
+    background-color: rgba(0,0,0,.075);
+}
+
+#table-left table tbody td button {
+    background-color: unset;
+}
+
+#table-left table tbody td button:hover {
+    background-color: #fbc2b9;
+}
+
+#table-left table tbody td button i{
+    color: #F72809 !important;
+}
+
+#table-left table tbody td {
+    padding: 5px !important;
+}
+
+#table-left table tbody td:last-child {
+    line-height: 37px !important;
+}
+
+
+/* End CSS table-left*/
+
+/* CSS table-right */
+
+#table-right {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+#table-right tbody tr td {
+    padding: 10px !important;
+}
+
+#table-right tbody tr td:first-child {
+    width: 95px !important;
+}
+
+#table-right tbody tr td .hidden {
+    display: none;
+}
+
+/* End CSS table-right */

@@ -1,0 +1,1078 @@
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    
+}
+
+#loading{
+    display: none;
+}
+
+.textbox-error {
+    color: #dc3545;
+}
+
+.tooltip_error {
+    color: red;
+}
+
+.boder-error {
+    border: 1px solid rgb(231, 80, 90) !important;
+}
+
+.form-control.date {
+    width: 100%;
+}
+
+.div_loading {
+    background: #000000;
+    display: none;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.image_loading {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.image_loading img {
+    width: 50%;
+}
+
+
+/* CSS for Header */
+
+nav.header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-top: 2px solid #5a3e3e;
+    border-bottom: 1px solid #5a3e3e;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+/* CSS for Header Icon */
+
+nav.header .navbar-brand {
+    margin: 0;
+    min-width: 80px;
+    padding: 0;
+    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 35px;
+    transition: all .5s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+
+
+/* End CSS for Header Icon */
+
+
+/* CSS for Header Content Left */
+
+nav.header .navbar-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar-content .mr-auto {
+    flex-direction: row;
+}
+
+#breadcrumb {
+    list-style: none;
+    display: table-cell;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#breadcrumb li {
+    float: left;
+}
+
+#breadcrumb li a {
+    color: #fff;
+    display: block;
+    background: #9e9e9e;
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+}
+
+#breadcrumb li:first-child a {
+    padding-left: 15px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+#breadcrumb li a:before,
+#breadcrumb li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0 solid #9e9e9e;
+    border-width: 20px 10px;
+    width: 0;
+    height: 0;
+}
+
+#breadcrumb li a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+
+#breadcrumb li:first-child a:before {
+    border: none;
+}
+
+#breadcrumb li a:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #9e9e9e;
+}
+
+#breadcrumb li:last-child a:after {
+    border: none;
+}
+
+#breadcrumb li.active a {
+    background-color: #707070 !important;
+}
+
+#breadcrumb li.active a:before {
+    border-color: #707070;
+    border-left-color: transparent;
+}
+
+#breadcrumb li a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+
+#breadcrumb li:last-child a {
+    padding-right: 15px;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+
+/* End CSS for Header Content Left */
+
+
+/* CSS for Header Content Right */
+
+.navbar-content ul.right {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    position: absolute;
+    right: 0;
+}
+
+.header ul.right>li {
+    border-left: 1px solid #707070;
+}
+
+.header ul.right .nav-link {
+    padding: 0 10px;
+    height: 65px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header ul.right .dropdown .nav-link:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+.header ul.right .dropdown .nav-link:focus {
+    color: rgba(0, 0, 0, .5);
+}
+
+.dropdown a#dropdownMenu2 {
+    flex-direction: row;
+    align-items: center;
+    max-width: 200px;
+}
+
+.dropdown a#dropdownMenu2 .dropdown-toggle::after {
+    margin-left: 15px;
+}
+
+.dropdown-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-data img {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-data ul {
+    list-style: none;
+    font-size: 12px;
+    padding: unset;
+    margin-left: 15px;
+}
+
+.dropdown-data li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 130px;
+    color: #707070 !important;
+}
+
+.dropdown .dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #707070;
+    border-top: 0;
+    margin-top: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    height: 35px;
+    color: #fff;
+    width: 100%;
+    outline: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    background-color: #707070;
+    width: auto;
+    cursor: pointer;
+}
+
+a.nav-link.icon.logout {
+    background-color: #707070 !important;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+a.nav-link.icon.logout img {
+    height: 20px;
+    width: 20px;
+}
+
+a.nav-link.icon.logout:hover {
+    color: #fff;
+}
+
+
+/* End CSS for Header Content Right */
+
+
+/* End CSS for Header */
+
+
+/* CSS for Main */
+
+.main {
+    width: 100%;
+    height: calc(100vh - 68px);
+    background-color: aqua;
+    position: relative;
+    display: flex;
+    top: 68px
+}
+
+
+/* CSS for Main Navbar */
+
+.main-nav {
+    width: 80px;
+    background-color: #707070;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 68px;
+}
+
+.main-nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav-menu>li {
+    width: 80px;
+    height: 80px;
+}
+
+.main-nav-menu>li>a {
+    display: table-cell;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-nav-menu>li>a>p {
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.main-nav-menu>li:hover {
+    background-color: #9E9E9E;
+}
+
+.main-nav>ul>li:hover>a:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: #ccc;
+    opacity: 0.5;
+}
+
+.list-item:hover>a:after {
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: 10px solid #fff;
+    content: " ";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* End CSS for Main Navbar */
+
+
+/* CSS for Main Content */
+
+.main-content {
+    width: 100%;
+    background-color: #fff;
+    width: calc(100% - 80px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main-content .container-fluid .header {
+    border: unset;
+}
+
+.title-screen {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.main-content .container-fluid .list-buttons {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.list-buttons .button {
+    margin-left: 5px;
+}
+
+.main-content .footer {
+    width: 100%;
+    height: 35px;
+    background-color: #9e9e9e;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+
+/* End CSS for Main Content */
+
+
+/* End CSS for Main */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #909090cc;
+    z-index: 1001;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.img-loading {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* CSS for Components */
+
+
+/* CSS for Button Components */
+
+.button {
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 2px rgb(88 103 221 / 19%);
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.button .text {
+    padding-bottom: 3px;
+    color: #707070;
+}
+
+.button .icon i {
+    color: #707070;
+}
+
+.button:hover {
+    background-color: #707070 !important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.button:hover.button .icon i {
+    color: #fff !important;
+}
+
+.button:hover.button .text {
+    color: #fff !important;
+}
+
+.delete-btn {
+    border-color: #d9534f !important;
+}
+
+.delete-btn .icon i {
+    color: #d9534f !important;
+}
+
+.delete-btn .text {
+    color: #d9534f !important;
+}
+
+.delete-btn:hover {
+    background-color: #d9534f !important;
+}
+
+.delete-btn:hover.delete-btn .text {
+    color: #fff !important;
+}
+
+.button-popup {
+    height: 38px !important;
+    font-size: 1rem;
+    flex-direction: row !important;
+}
+
+.button-popup .icon {
+    margin-right: 15px;
+    text-align: center;
+}
+
+.button-popup .text {
+    padding: unset;
+}
+
+.button-basic {
+    background-color: #707070 !important;
+}
+
+.button-basic .text {
+    color: #fff !important;
+}
+
+.button-basic:hover {
+    background-color: #2B71B9 !important;
+}
+
+a.button-basic {
+    background-color: #707070 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+a.button-basic:hover {
+    background-color: #707070 !important;
+}
+
+
+
+.show-btn {
+    height: 30px !important;
+}
+
+.show-password-btn {
+    height: 36px !important;
+    padding: 0 20px !important;
+}
+
+.upload-file-btn {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 15px;
+    border-radius: 50% !important;
+    box-shadow: unset;
+    border-color: #2A70B8 !important;
+}
+
+.upload-file-btn .icon i {
+    margin-left: 2px !important;
+    color: #2A70B8 !important;
+}
+
+.upload-file-btn:hover {
+    background-color: #2A70B8 !important;
+}
+
+.delete-file-btn {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 15px;
+    border-radius: 50% !important;
+    box-shadow: unset;
+    border-color: #d9534f !important;
+}
+
+.delete-file-btn .icon i {
+    margin-left: 1px !important;
+    color: #d9534f !important;
+}
+
+.delete-file-btn:hover {
+    background-color: #d9534f !important;
+}
+
+.button-lock {
+    flex-direction: row;
+    height: 38px !important;
+    background-color: #707070 !important;
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+.button-lock .icon i {
+    color: #ccc !important;
+    padding: 0px 10px;
+}
+
+.button-lock .text {
+    color: #fff !important;
+    padding: 0;
+}
+
+.dropdown-list-btns {
+    position: absolute;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-list-btns img {
+    width: inherit;
+    height: inherit;
+}
+
+.dropdown-list-btns .dropdown-menu-btns {
+    position: absolute;
+}
+
+#dropdown-list-btns {
+    margin: 5px 0px 0px 0px;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 9999;
+    background-color: #fff;
+    right: 0;
+    border-radius: 2.5px !important;
+}
+
+#dropdown-list-btns>.button {
+    width: 200px;
+    justify-content: start;
+    padding: 0;
+    height: 38px !important;
+    padding: 0 15px;
+    font-size: 13px;
+    box-shadow: unset;
+    border: unset !important;
+    border-radius: unset !important;
+    font-size: 1rem;
+    flex-direction: row !important;
+}
+
+#dropdown-list-btns>.button {
+    border-top: 1px solid #707070 !important;
+    border-left: 1px solid #707070 !important;
+    border-right: 1px solid #707070 !important;
+}
+
+#dropdown-list-btns>.button .icon {
+    margin-right: 10px;
+}
+
+#dropdown-list-btns>.button:first-child {
+    border-top-left-radius: 2.5px !important;
+    border-top-right-radius: 2.5px !important;
+}
+
+#dropdown-list-btns>.button:last-child {
+    border-bottom-left-radius: 2.5px !important;
+    border-bottom-right-radius: 2.5px !important;
+    border-bottom: 1px solid #707070 !important;
+}
+
+#dropdown-list-btns>.delete-btn {
+    border-top: 1px solid #707070 !important;
+    border-left: 1px solid #707070 !important;
+    border-right: 1px solid #707070 !important;
+}
+
+
+/* End CSS for Button Components */
+
+
+/* CSS for Input Components */
+
+.required {
+    background-color: #FFF0D3 !important;
+}
+
+.label-required:after {
+    content: " \5FC5\9808 ";
+    color: #F72809;
+    font-size: 12px !important;
+    vertical-align: middle;
+    top: -3px;
+    position: relative;
+    margin-left: 5px;
+    border: 0.5px solid #F72809;
+    white-space: pre-wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group .control-label {
+    white-space: nowrap;
+}
+
+.form-group .control-span {
+    position: relative;
+    display: flex;
+}
+
+.form-control:focus {
+    color: #495057;
+    border-color: #cfccc4;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #cfccc485;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(71, 71, 71, 0.49);
+}
+
+.input-group-btn {
+    position: relative;
+}
+
+.input-group-append-btn {
+    position: absolute;
+    top: 0;
+}
+
+.input-group-append-btn .btn-transparent {
+    cursor: pointer !important;
+}
+
+.input-group-append-btn .btn.bg-transparent {
+    opacity: unset;
+}
+
+.left-btn .input-group-append-btn {
+    left: 0;
+}
+
+.right-btn .input-group-append-btn {
+    right: 0;
+}
+
+.left-btn .form-control {
+    padding-left: 2.25rem;
+    padding-right: 0.75rem;
+}
+
+.right-btn .form-control {
+    padding-right: 2.25rem;
+    padding-left: 0.75rem;
+}
+
+.right-btn .btn-transparent i {
+    color: rgba(71, 71, 71, 0.49);
+}
+
+.form-check {
+    padding: 0;
+}
+
+.check-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    height: 33px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.check-box .form-check-input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    left: 0;
+    margin: 0;
+}
+
+.checkmark {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #707070 !important;
+    border-radius: 1.5px;
+    background-color: #707070 !important;
+    position: absolute;
+    cursor: pointer;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-box input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(35deg);
+}
+
+.hidden-navbar {
+    display: none;
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid #5a3e3e;
+    border-bottom: 1px solid #5a3e3e;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.hidden-navbar .navbar-collapse .row {
+    background-color: #707070;
+    margin: 0 auto
+}
+
+.navbar-collapse .row .btn {
+    background: #f7f7f7;
+    margin: 0 auto;
+}
+
+.hidden-navbar .navbar-brand {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 80px;
+    justify-content: center;
+}
+
+.hidden-navbar ul.nav-item {
+    height: 37px;
+}
+
+.hidden-navbar .nav-item {
+    padding: 7px 0px;
+    border-bottom: 1px solid #fff;
+}
+
+.hidden-navbar .nav-item .nav-link {
+    padding: 0 !important;
+    font-size: 14px !important;
+}
+
+.hidden-navbar .nav-item .nav-link img {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 5px;
+}
+
+
+/* End CSS for Input Components */
+
+/* End CSS for Components */
+
+/* CSS for Header Popup */
+
+#overlay {
+    background: #0000005e !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.popup {
+    background-color: #fff !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3.5px;
+}
+
+.popup-header {
+    height: 50px;
+    background-color: #707070 !important;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    color: #fff;
+    border-top-left-radius: 3.5px;
+    border-top-right-radius: 3.5px;
+}
+
+.popup-content {
+    border-bottom-left-radius: 3.5px;
+    border-bottom-right-radius: 3.5px;
+}
+
+.popup-content .card-body input[type="password"]::placeholder {
+    text-align: center;
+}
+
+.close-icon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.close-icon:before, .close-icon:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 2px;
+    background-color: #fff;
+}
+
+.close-icon:before {
+    transform: rotate(45deg);
+}
+
+.close-icon:after {
+    transform: rotate(-45deg);
+}
+
+/* End CSS for Header Popup */
+
+/* Responsive */
+
+
+/* Medium */
+
+@media screen and (max-width: 720px) {
+    nav.header ul.navbar-nav.mr-auto {
+        display: none !important;
+    }
+
+    .list-buttons {
+        display: none !important;
+    }
+
+    .dropdown-list-btns {
+        display: block;
+    }
+}
+
+
+/* Small */
+
+@media screen and (max-width: 540px) {
+    nav.header {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .main-content .footer {
+        display: none;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important;
+    }
+
+    .hidden-navbar {
+        display: flex !important;
+    }
+}
+
+.dataTables_paginate .paginate_button:not(.active) {
+    color: #fff;
+    border-radius: 45%;
+    background-color: #c3c3c6;
+}
+
+.dataTables_paginate .paginate_button {
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #c3c3c6;
+    border-radius: 50%;
+}
+
+.dataTables_paginate .paginate_button.active {
+    background-color: var(--background-black);
+    color: white;
+}
+
+.dataTables_paginate .paginate_button:hover:not(.active) {
+    background-color: #c3c3c6;
+}
+
+.pagigate {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* CSS maxlength input */
+
+.num-length {
+    position: relative;
+}
+
+.lg {
+    position: absolute;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 125%;
+    max-width: 70px;
+    min-width: 50px;
+    text-align: center;
+    background-color: #707070;
+    border: 1px solid #707070;
+    border-radius: 4.5px;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.lg-max {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d9534f;
+}

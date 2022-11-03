@@ -1,0 +1,86 @@
+body {
+    color: #fff;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("/images/system/backgroud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    color: black;
+    background-color: none;
+}
+
+.logo {
+    height: 40px;
+    width: 250px;
+    position: fixed;
+    top: 95%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    background: none;
+}
+
+.input_title {
+    margin-bottom: 20px;
+}
+
+.input {
+    height: 50px;
+    width: 350px;
+    background: none;
+    border: none;
+    background-color: #77afdd;
+    text-align: center;
+}
+
+input:valid {
+    background-color: white;
+}
+
+.input:hover {
+    background-color: white;
+    color: black;
+}
+
+input:hover::placeholder {
+    color: #44B0BD;
+}
+
+.input:focus {
+    outline: none;
+}
+
+::placeholder {
+    text-align: center;
+    color: white;
+}
+
+.checkbox {
+    margin-left: 20px;
+    margin-top: 17px;
+    margin-right: 5px;
+}
+
+#btn_login {
+    height: 50px;
+    margin-top: 20px;
+    width: 350px;
+    background-color: #4f82c4;
+    border-color: #4f82c4;
+    background-color: none;
+}
+
+.label_checkbox{
+    color: white;
+}

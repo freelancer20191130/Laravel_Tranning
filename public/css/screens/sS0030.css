@@ -1,0 +1,279 @@
+.inner {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3.5px;
+}
+
+.line-border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 15px;
+    border-left: 5px solid #707070 ;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #707070 ;
+    font-weight: bold;
+}
+
+.input-group-append-btn button {
+    background-color: #fff !important;
+    border-color: #ced4da !important;
+    color: #ced4da !important;
+}
+
+#search-btn {
+    background-color: #757575;
+    color: #fff;
+}
+
+#show-btn {
+    width: fit-content;
+}
+
+/* CSS table */
+
+.w-50px {
+    min-width: 50px;
+    max-width: 50px;
+    width: 50px;
+}
+
+.w-160px {
+    min-width: 160px;
+    max-width: 160px;
+    width: 160px;
+}
+
+.w-120px {
+    min-width: 120px;
+    max-width: 120px;
+    width: 120px;
+}
+
+#table {
+    overflow-x: scroll;
+    max-height: 54vh;
+    min-height: 54vh;
+}
+
+.top-scroll{
+    height: 18px;
+    overflow-x: scroll;
+}
+
+.top-scroll .scroll-div1 {
+    width: 2010px;
+}
+
+/* CSS Thead */
+
+.table thead th {
+    background-color: #EAEBEE !important;
+    max-height: 50px;
+    padding: 0;
+    padding: 7px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.table thead th:first-child .check-box {
+    justify-content: center;
+}
+
+
+/* CSS Tbody */
+
+.table tbody td {
+    padding: 0;
+    padding: 9px;
+    vertical-align: middle;
+}
+
+.table tbody td:first-child .check-box {
+    justify-content: center;
+}
+
+.table tr:nth-child(odd){
+    background-color:rgba(0,0,0,.05);
+}
+
+.table tr:nth-child(even){
+    background-color:#fff;
+}
+
+/* CSS Paging */
+
+#paging {
+    padding-top: 10px;
+    height: 45px;
+    align-content: space-between;
+    position: relative;
+}
+
+#paging #datatable_flextime_paginate {
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}  
+
+#paging #datatable_flextime_paginate .paginate_button{
+    width: 30px;
+    height: 30px;
+    list-style: 30px;
+}
+
+#datatable_flextime_paginate a {
+    text-decoration: none;
+    margin: 0 2px;
+    line-height: 20px;
+}
+
+.dataTables_paginate .paginate_button.active {
+    background-color: #707070 !important;
+}
+
+.pager-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.pager-info .pager-size {
+    width: 100px;
+    height: 35px !important;
+    background-color: #F3F4F8;
+}
+
+.pager-info .pager-text {
+    padding: 0 0 0 10px;
+    min-width: 350px;
+}
+
+/* End CSS Paging */
+
+
+/* CSS POPUP */
+
+.wrapper {
+    min-height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.wrapper a[aria-expanded="true"] .fa-caret-up, a[aria-expanded="false"] .fa-caret-down {
+    display: inline-block;
+}
+
+.wrapper a[aria-expanded="false"] .fa-caret-up, a[aria-expanded="true"] .fa-caret-down {
+    display: none;
+}
+
+.wrapper #search-btn {
+    width: fit-content;
+    border: unset;
+    position: absolute;
+    right: 15px;
+    background-color: #fff !important;
+}
+
+.wrapper #search-btn:hover {
+    background-color: #707070 !important;
+    color: #fff;
+}
+
+/* CSS Table */
+.wrapper #table {
+    max-height: unset !important;
+}
+
+.wrapper #table table thead th{
+    background-color: #EAEBEE !important;
+    padding: 0 !important;
+    padding: 5px !important;
+    height: 32px !important;
+    font-size: 13px;
+}
+
+.wrapper #table table thead th:nth-child(1){
+    width: 70px;
+    max-width: 70px;
+    min-width: 70px;
+}
+
+.wrapper #table table thead th:nth-child(2){
+    width: 85px;
+    max-width: 85px;
+    min-width: 85px;
+}
+
+.wrapper #table .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.wrapper #table table tbody td{
+    padding: 0 !important;
+    padding: 5px !important;
+    height: 32px !important;
+    font-size: 13px;
+}
+
+.wrapper #table table tr:nth-child(odd){
+    background-color:rgba(0,0,0,.05);
+}
+
+.wrapper #table table tr:nth-child(even){
+    background-color:white;
+}
+
+.wrapper #table table tr:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.075);
+}
+
+.wrapper #table table tbody .text-overfollow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px;
+}
+
+.wrapper #paging-popup {
+    padding-top: 10px;
+    height: 45px;
+    align-content: space-between;
+    position: relative;
+}
+
+.wrapper #paging-popup #datatable_flextime_paginate {
+    justify-content: start;
+    width: fit-content;
+}  
+
+.wrapper #paging-popup #datatable_flextime_paginate .paginate_button{
+    width: 30px;
+    height: 30px;
+    list-style: 30px;
+}
+
+.wrapper .pager-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.wrapper .pager-info .pager-size {
+    width: 100px;
+    height: 35px !important;
+    background-color: #F3F4F8;
+}
+
+.wrapper .pager-info .pager-text {
+    padding: 0 0 0 10px;
+    min-width: 350px;
+}

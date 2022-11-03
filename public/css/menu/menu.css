@@ -1,0 +1,17 @@
+.header .navbar-content {
+    justify-content: end !important;
+}
+
+ul.navbar-nav.mr-auto {
+    display: none !important;
+}
+
+.main-content .container-fluid:last-child .button:hover {
+    background-color: #707070 !important;
+    color: #fff !important;
+    /* margin: 0; */
+}
+
+.dropdown-list-btns{
+    display: none !important;
+}
